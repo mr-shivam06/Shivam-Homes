@@ -1,0 +1,15 @@
+This is a test. And this is a static file.
+
+
+
+
+
+WELCOME TO THE WEBSITE,HOPE YOU FIND THE HOME OF YOUR DREAMS HERE. THANK YOU!
+
+
+
+
+
+
+Static files are files which can be seen by any user.
+I'm working on Django.

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Our Services</h1>
+    <p class="text-center mb-5">At Shivam Homes, we offer a wide range of real estate services designed to meet all your property needs. Explore our services and let us help you find the perfect solution for your property goals.</p>
+
+    <!-- Services Section -->
+    <div class="row">
+        <!-- Consultation Service -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://amazelaw.com/wp-content/uploads/2017/09/Overview-of-in-person-consultations.png" class="card-img-top" alt="Consultation Services" height=200>
+                <div class="card-body">
+                    <h5 class="card-title">Consultation Services</h5>
+                    <p class="card-text">Our expert consultants provide personalized advice on property buying, selling, and investment. Get the guidance you need to make informed decisions in the real estate market.</p>
+                    <a href="/consultation" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property Leasing Service -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2018/02/24194454/Real-estate-basics-What-is-a-Leasehold-property-FB-1200x628-compressed.jpg" class="card-img-top" alt="Property Leasing Services" height=227>
+                <div class="card-body">
+                    <h5 class="card-title">Property Leasing</h5>
+                    <p class="card-text">We offer comprehensive property leasing services for both property owners and tenants. From finding tenants to managing leases, we handle it all.</p>
+                    <a href="/leasing" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Renovations Service -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttRcQLTfXigjfGeBKGWXaf_kYpjRduCsR_Q&s" class="card-img-top" alt="Home Renovations Services" height=200>
+                <div class="card-body">
+                    <h5 class="card-title">Home Renovations</h5>
+                    <p class="card-text">Transform your property with our expert home renovation services. From minor repairs to complete overhauls, we enhance the aesthetic and functional value of your home.</p>
+                    <a href="/renovations" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

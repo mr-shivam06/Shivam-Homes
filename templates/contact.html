@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+    <img src="https://www.pramaautochappati.in/wp-content/uploads/2019/06/contactus.jpg" 
+         class="d-block w-100 mx-0" alt="Contact Us" height="250">
+</div>
+
+<div class="container">
+    <h2 class="text-center">Contact Us!</h2>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <!-- Centering the form -->
+        <div class="d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="ENTER YOUR NAME" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="...." required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">What do you want to say?</label>
+                    <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock body %}
